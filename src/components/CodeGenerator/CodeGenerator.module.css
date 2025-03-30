@@ -1,0 +1,14 @@
+.code-generator-container {
+  max-width: 100%;
+  overflow: auto;
+}
+
+.code-output {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .code-output {
+    font-size: 12px;
+  }
+} 

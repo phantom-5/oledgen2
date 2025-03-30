@@ -1,0 +1,16 @@
+.toolbar-container {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .toolbar-container button {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+
+  .toolbar-container button svg {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,31 @@
+.save-load-container {
+  max-width: 100%;
+}
+
+.save-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.design-name-input {
+  margin-bottom: 16px;
+}
+
+.designs-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.design-item {
+  transition: background-color 0.2s;
+}
+
+.design-item:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .save-container {
+    flex-direction: column;
+  }
+} 

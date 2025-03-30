@@ -1,0 +1,16 @@
+.drawing-tools-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.toggle-button-group {
+  margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+  .toggle-button-group {
+    flex-wrap: wrap;
+  }
+} 

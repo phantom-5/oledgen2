@@ -1,0 +1,153 @@
+.oled-container {
+  max-width: 100%;
+  margin: 0 auto;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #000000;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+  overflow: visible;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #000000;
+}
+
+.grid-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  background-color: #000000;
+}
+
+.grid-pixel {
+  cursor: pointer;
+  border: 0.1px solid #111;
+  transition: background-color 0.1s;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+.grid-pixel:hover {
+  opacity: 0.8;
+}
+
+.coords-display {
+  font-size: 0.9em;
+  font-weight: normal;
+  color: #666;
+  margin-left: 10px;
+}
+
+/* Adjust pixel size for different screen sizes */
+@media (max-width: 1400px) {
+  .grid-container {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+}
+
+/* Only use scaling for mobile devices */
+@media (max-width: 768px) {
+  .grid-container {
+    transform: scale(0.8);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    transform: scale(0.6);
+    transform-origin: top center;
+  }
+}
+
+/* Existing styles */
+.gridContainer {
+  margin: 10px;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.gridHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.gridWrapper {
+  overflow: auto;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.grid {
+  display: inline-flex;
+  flex-direction: column;
+  border: 0.1px solid #222;
+  user-select: none;
+  background-color: #000000;
+}
+
+.grid-row {
+  display: flex;
+  background-color: #000000;
+}
+
+.grid-pixel {
+  border: 0.1px solid #111;
+  box-sizing: border-box;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.on {
+  background-color: #ffffff;
+}
+
+/* Animation styles */
+.preview {
+  background-color: rgba(128, 128, 255, 0.9) !important;
+  border: 0.5px solid #5555ff !important;
+  z-index: 5 !important;
+}
+
+.animationPath {
+  border: 1px dashed #00a0ff;
+}
+
+.selectedAnimation {
+  border: 2px solid #00ff00;
+  z-index: 1;
+}
+
+.animationStart {
+  border: 2px solid #ff0000 !important;
+  background-color: rgba(255, 0, 0, 0.7) !important;
+  z-index: 3;
+}
+
+.animationEnd {
+  border: 2px solid #0000ff !important;
+  background-color: rgba(0, 0, 255, 0.7) !important;
+  z-index: 3;
+}
+
+.currentAnimationPoint {
+  border: 3px solid #ff4081 !important;
+  background-color: rgba(255, 64, 129, 0.9) !important;
+  z-index: 15;
+  box-shadow: 0 0 5px #ff4081;
+  transform: scale(1.2);
+} 

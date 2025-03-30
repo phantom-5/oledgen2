@@ -1,0 +1,28 @@
+.animationContainer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.frameGrid {
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gridRow {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Scrollbar styles for Firefox */
+.scrollContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+} 
